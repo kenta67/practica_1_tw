@@ -24,11 +24,11 @@
           
           localStorage.setItem('profileImage', e.target.result);
           
-          alert('✅ Imagen cambiada correctamente');
+          alert('Imagen cambiada correctamente');
         };
         
         reader.onerror = function() {
-          alert('❌ Error al cargar la imagen');
+          alert('Error al cargar la imagen');
         };
         
         reader.readAsDataURL(file);
@@ -40,7 +40,7 @@
         profileImage.src = originalImageSrc;
         localStorage.removeItem('profileImage');
         imageUpload.value = '';
-        alert('✅ Imagen restaurada');
+        alert('Imagen restaurada');
       }
     });
     

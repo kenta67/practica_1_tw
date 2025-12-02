@@ -26,6 +26,7 @@ header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 600px;
+    border-radius: 8px;
 }
 
 header, footer, footer a {
@@ -35,12 +36,158 @@ header, footer, footer a {
 }
 
 header img {
-    width: 150px;
-    height: auto;
-    float: right;
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    border-radius: 10%;
+    
 }
 
 footer {
     font-size: 0.75rem;
 }
+
+
+
+header {
+    background-color: #8A6694;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 1.25rem auto;
+    max-width: 600px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: white;
+    flex: 1;
+}
+
+.profile-image-container {
+    position: relative;
+    width: 150px;
+    text-align: center;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    object-fit: cover;
+    border: 3px solid white;
+    display: block;
+}
+
+.camera-icon {
+    position: relative;
+    top: -20px;
+    background-color: #464647;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-size: 16px;
+    z-index: 1;
+}
+
+.camera-icon:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.image-upload-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#image-upload {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+    flex-direction: column;
+    text-align: center;
+    }
+    
+    header h1 {
+    margin-bottom: 20px;
+    }
+    
+    .profile-image-container {
+    margin-top: 10px;
+    }
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 1.25rem auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+main h2 {
+    color: #321236;
+    border-bottom: 2px solid #8A6694;
+    padding-bottom: 10px;
+}
+
+main ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+main li {
+    margin-bottom: 10px;
+}
+
+main a {
+    color: #8A6694;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #8A6694;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 1.25rem auto;
+    max-width: 600px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
+
 

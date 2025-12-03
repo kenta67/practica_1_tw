@@ -9,18 +9,26 @@ body {
     line-height: 32px;
     font-family:Ubuntu,sans-serif;
     color:#0b0c0b;
-}
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    }
 
 h1 {
-    font-size: 2rem;
-    color:#321236;
+    font-family: 'Sofia';font-size: 22px;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-family: 'Sofia';font-size: 22px;
     text-align: center;
-    border-bottom: 2px solid #bbb;
 }
+
+.text2 {
+    font-family: 'Aguafina Script';font-size: 22px;
+}
+
 
 header, main, footer {
     margin: 1.25rem auto;
@@ -170,21 +178,7 @@ main a:hover {
     text-decoration: underline;
 }
 
-footer {
-    background-color: #8A6694;
-    color: white;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 1.25rem auto;
-    max-width: 600px;
-    text-align: center;
-    font-size: 0.9rem;
-}
 
-footer a {
-    color: white;
-    text-decoration: underline;
-}
 
 
 

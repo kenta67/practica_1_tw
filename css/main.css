@@ -177,7 +177,25 @@ main a {
 main a:hover {
     text-decoration: underline;
 }
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+}
 
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: #d4c4e0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
 
 
 
